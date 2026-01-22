@@ -1,0 +1,60 @@
+1).How do you find vulnerabilities in a Docker image using Trivy, and how do you fix them ?
+2).what is the difference between SAST and DAST ?
+3).How do you secure AWS credentials in a CI/CD pipeline ?
+4).what are the best practices for securing ?
+5).How do you secure terraform state files?
+6).explain the OWASP top 10 vulnerabilities, how do you mitigate them ?
+7).how do you automate security scanning in cicd pipeline 
+8).what are cryptographic having algorithms and their use cases ?
+9) how do you prevent secrets from being exposed in GIT repositories?
+10).what is IAC and what security measures should be taken ?
+
+11).how do you secure API’s in a microservices architecture ?
+
+12).how do you secure a CI/CD pipeline from supply chain attacks?
+
+13). How did you monitor and analyze security logs in was ?
+
+14). What is the difference between App armor and selinux?
+
+15). What is an SBOM and why is it important in DevSecOps?
+
+16). How do you manage API security in Kubernetes ?
+
+17). How do you prevent privilege escalation in a Kubernetes cluster ?
+
+18).how do you ensure compliance with security standards like NIST, GDPR ?
+
+19). What is EPSS in Cybersecurity?
+
+20). How do you perform security hardening ?
+——
+
+1). Can you walk me through your DevSecOps journey so far ?
+A. Implement RBAC, password vault encryption mechanism
+2). How have you embedded security tools into your CI/CD pipelines ?
+3).How do you control the use of container images in your pipelines ?
+4).Describe your experience with AWS services in a DevSecOps context?
+5).How have you managed infrastructure as code securely using terraform?
+6).How do you secure Kubernetes workloads ?
+7).Explain your experience with helm ?
+8).what is your approach to implementing a shift-left security strategy?
+9).How do you manage vulnerability remediation workflows?
+10).What monitoring tools have you used, and how do they support security?
+11).Have you used or evaluated any runtime security tools ?
+12).can you describe a scripting task that saved you time or reduced risk?
+13).what are policy as code tools you’ve worked with, and how do they help in enforcing security ?
+14).How do you validate Kubernetes manifests or Helm charts before deploying to production ?
+15).How do you secure image pulls in your pipeline or Kubernetes cluster?
+16).Describe your experience implementing shift-left security in a CI/CD setup?
+17).How do you enforce compliance in terraform code?
+18).what do you do when a security tool reports a false positive in the pipeline ?
+19).what step do you take to harden a Kubernetes cluster ?
+20).How you worked with runtime security tools like Falco or wiz ? How did you use them?
+21).Explain how you managed secrets securely in your DevSecOps pipelines?
+22).What’s your experience with Azure or GCP? How do you manage security there?
+23).How have you monitored container performance and security?
+24).Tell me about a critical security incident you handled and how you resolve it?
+25).How do you collaborate with development teams to enforce DevSecOps practices ?
+
+

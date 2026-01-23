@@ -1,7 +1,37 @@
 1).How do you find vulnerabilities in a Docker image using Trivy, and how do you fix them ?
+A. update the vulnerable packages or the base image in your Dockerfile and rebuild the image to apply security patches.
+   Pull the Docker image (if it is not already local): #docker pull your_image_name:tag
+   Run the Trivy scan on the image: #trivy image your_image_name:tag
+
 2).what is the difference between SAST and DAST ?
+A. SAST (Static Application Security Testing):
+When it runs: During development (on source code, bytecode, or binaries).
+How it works: Analyzes the code without executing it.
+Focus: Finds vulnerabilities like SQL injection, XSS, buffer overflows, and insecure coding patterns early in the development lifecycle.
+Example tools: SonarQube, Checkmarx, Veracode.
+
+DAST (Dynamic Application Security Testing):
+When it runs: On a running application (runtime).
+How it works: Tests the application from the outside, simulating attacks to find vulnerabilities.
+Focus: Finds issues like authentication flaws, runtime misconfigurations, and input validation problems after deployment.
+Example tools: OWASP ZAP, Burp Suite, Acunetix.
+
+Key difference in one line:
+SAST = “White-box” code scanning before execution.
+DAST = “Black-box” testing on running apps.
+
 3).How do you secure AWS credentials in a CI/CD pipeline ?
-4).what are the best practices for securing ?
+A. Securing AWS credentials in a CI/CD pipeline involves using ephemeral credentials (temporary security credentials with a limited lifespan) that are automatically managed, rather than long-term access keys. The recommended method is using OpenID Connect (OIDC) to assume a specific IAM role
+Recommended Approach: IAM Roles and OIDC
+The most secure and widely adopted method is to use IAM roles with OpenID Connect (OIDC). This method eliminates the need to store long-term AWS access keys in your CI/CD system [1]. 
+Establish an OIDC Trust Relationship: Configure your AWS IAM Identity Provider to trust your specific CI/CD provider (e.g., GitHub Actions, GitLab CI/CD, Jenkins) as an OIDC identity provider [1].
+Define a Specific IAM Role: Create an AWS IAM role that specifies which OIDC provider can assume it and under what specific conditions (e.g., only from a certain GitHub repository and branch) [1]. This role should have only the minimum necessary permissions required for the CI/CD job.
+Assume the Role in the Pipeline: In your CI/CD pipeline configuration, add a step to assume the IAM role using the OIDC token automatically provided by your CI/CD provider.
+Utilize Ephemeral Credentials: The "assume role" action returns temporary security credentials, which the CI/CD pipeline then uses for all subsequent AWS interactions [1]. These credentials expire shortly after the job finishes. 
+
+4).what are the best practices for securing?
+A. RBAC, least privileges, based on role provide dedicated access to control resources, network also define network policies, securing Kubernetes workloads, by managing vault, was secret manager, restricting root access
+
 5).How do you secure terraform state files?
 6).explain the OWASP top 10 vulnerabilities, how do you mitigate them ?
 7).how do you automate security scanning in cicd pipeline 

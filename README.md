@@ -17,7 +17,7 @@ Threat modeling
 Attack surfaces in CI/CD
 Least privilege & zero trust
 Compliance thinking (SOC2, HIPAA, PCI)
----------------------------------------
+
 *Pipeline security
 Snyk / Trivy / Checkmarx
 SonarQube (security rules)

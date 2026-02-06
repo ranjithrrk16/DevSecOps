@@ -8,7 +8,6 @@ RASP - (runtime app self protection)
 
 SCA - (software composition analysis)
 
-#################################################
 ✅ Kubernetes
 ✅ CI/CD (GitHub Actions, GitLab, ArgoCD)
 ✅ Terraform / IaC

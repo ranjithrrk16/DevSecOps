@@ -8,8 +8,7 @@ RASP - (runtime app self protection)
 
 SCA - (software composition analysis)
 
-Skills Needed: 
-
+#################################################
 ✅ Kubernetes
 ✅ CI/CD (GitHub Actions, GitLab, ArgoCD)
 ✅ Terraform / IaC
@@ -19,7 +18,7 @@ Threat modeling
 Attack surfaces in CI/CD
 Least privilege & zero trust
 Compliance thinking (SOC2, HIPAA, PCI)
-
+---------------------------------------
 *Pipeline security
 Snyk / Trivy / Checkmarx
 SonarQube (security rules)
